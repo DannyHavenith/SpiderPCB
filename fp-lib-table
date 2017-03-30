@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name spider)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+  (lib (name TSOP2438)(type Legacy)(uri "$(KIPRJMOD)/TSOP2438/TSOP2438.mod")(options "")(descr ""))
+  (lib (name osh)(type KiCad)(uri "$(KIPRJMOD)/oshardware.kicad_mod")(options "")(descr ""))
+)
