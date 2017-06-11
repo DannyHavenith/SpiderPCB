@@ -1,4 +1,4 @@
-update=Thu 30 Mar 2017 11:38:22 PM CEST
+update=Sun 11 Jun 2017 05:58:28 PM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=TSOP2438
+LibDir=TSOP2438;components
 [eeschema/libraries]
 LibName1=spider-rescue
 LibName2=power
