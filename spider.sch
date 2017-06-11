@@ -98,7 +98,7 @@ L RF_Transmitter_433_MHz RF2
 U 1 1 58968B23
 P 4700 5225
 F 0 "RF2" H 4725 5750 60  0000 C CNN
-F 1 "RF_Transmitter_433_MHz" H 4825 4925 60  0001 C CNN
+F 1 "433 MHz" H 4825 4925 60  0001 C CNN
 F 2 "spider:RF_Transmitter_433_MHz" H 4700 5225 60  0001 C CNN
 F 3 "" H 4700 5225 60  0000 C CNN
 	1    4700 5225
@@ -215,7 +215,7 @@ U 1 1 5897ABC5
 P 5725 875
 F 0 "P2" H 6050 750 50  0000 C CNN
 F 1 "USB_OTG" H 5725 1075 50  0000 C CNN
-F 2 "spider:USB_Micro-B" V 5375 800 50  0001 C CNN
+F 2 "spider:USB_Micro-B handsoldering" V 5375 800 50  0001 C CNN
 F 3 "" V 5675 775 50  0000 C CNN
 	1    5725 875 
 	1    0    0    -1  
@@ -551,17 +551,6 @@ F 3 "" H 6850 3375 60  0001 C CNN
 $EndComp
 Text Label 3925 1450 0    60   ~ 0
 5V
-$Comp
-L CONN_02X04 J1
-U 1 1 58DD8F64
-P 3675 1300
-F 0 "J1" H 3675 1550 50  0000 C CNN
-F 1 "CONN_02X04" H 3675 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 3675 100 50  0001 C CNN
-F 3 "" H 3675 100 50  0001 C CNN
-	1    3675 1300
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1250 3450
 Text Label 3150 3350 0    60   ~ 0
 ADCin
@@ -599,4 +588,25 @@ Wire Wire Line
 	5675 3550 5525 3550
 Wire Wire Line
 	3350 3250 3150 3250
+Text Label 3725 3700 1    60   ~ 0
+espTX
+Text Label 3725 3800 3    60   ~ 0
+espRX
+Connection ~ 3725 3800
+Connection ~ 3725 3700
+$Comp
+L CONN_02X05 J1
+U 1 1 58E122B1
+P 3675 1350
+F 0 "J1" H 3675 1650 50  0000 C CNN
+F 1 "CONN_02X05" H 3675 1050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 3675 150 50  0001 C CNN
+F 3 "" H 3675 150 50  0001 C CNN
+	1    3675 1350
+	1    0    0    -1  
+$EndComp
+Text Label 3925 1550 0    60   ~ 0
+espTX
+Text Label 3425 1550 2    60   ~ 0
+espRX
 $EndSCHEMATC
